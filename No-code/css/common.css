@@ -3,44 +3,52 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Mulish', sans-serif;
 }
 
-button {
+li {
+    list-style-type: none;
+}
+
+.button {
+    border-radius: var(--border-radius-standart);
     border: none;
-    background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+    background: var(--baground-purple);
     color: white;
-    font-family: 'Mulish';
+    font-family: var(--font-mulish);
     font-style: normal;
     cursor: pointer;
 }
 
-a,
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Mulish';
+.button:hover {
+    background: var(--baground-dark-blue);
+    color: rgb(146, 146, 146);
+    transition: 15s;
+}
+
+.a,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: var(--font-mulish);
     font-style: normal;
-    color: #001A49;
+    color: var(--dark-blue);
 }
 
-.purpur--color {
-    background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+
+:root {
+    --dark-blue: #001A49;
+    --light-purple: #CD10FF;
+    --white: white;
+    --baground-purple: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+    --baground-dark-blue: linear-gradient(44.11deg,rgb(0, 26, 73) 15.75%,rgb(3, 41, 110) 84.63%);
+    --baground-light-purple:  #9f06ff1a 84.63%;
+    --small-haight-of-button: 50px;
+    --big-haight-of-button: 66px;
+    --border-radius-standart: 33px;
+    --font-mulish: 'Mulish', sans-serif;
 }
 
-.h3--logo {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 30px;
-    padding-left: 12px;
-}
 
-.a--link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-}
 
-.a--link:hover {
-    color:#CD10FF;
-}
